@@ -16,6 +16,7 @@
 /scripts/corpus_stats.py
 /scripts/parquet_to_text.py
 /scripts/sft_prompts.py
+/scripts/test_corpus_clean.py
 
 /data/*
 !/data/tokenizer

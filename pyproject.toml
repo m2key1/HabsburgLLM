@@ -1,0 +1,39 @@
+[project]
+name = "habsburgllm"
+version = "0.1.0"
+description = "Training an LLM from scratch on historical data only"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=4.8.5",
+    "transformers>=5.9.0",
+    "pyarrow>=24.0.0",
+    "ipywidgets>=8.1.8",
+    "torch>=2.12.0",
+    "torchvision>=0.27.0",
+    "torchaudio>=2.11.0",
+    "huggingface-hub>=1.16.1",
+    "accelerate>=1.1.0",
+    "tensorboard>=2.20.0",
+    "openai>=3.14.0",
+    "python-dotenv>=1.2.3",
+    "pydantic>=2.13.5",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.1",
+    "notebook>=7.5.0",
+]
+
+# PyTorch CUDA 13.0 wheels are not on PyPI; pull them from the dedicated index.
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }
+torchaudio = { index = "pytorch-cu130" }

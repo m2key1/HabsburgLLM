@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or the models, please cite it as below."
+type: software
+title: "HabsburgLLM"
+abstract: "Language models trained from scratch on historical text only: a 3.97B OLMo 3 model on re-OCRed Austrian newspapers (ANNO) from 1800 to 27 June 1914, and an earlier model on London texts from 1800 to 1875."
+authors:
+  - family-names: Fleischhacker
+    given-names: David
+repository-code: "https://github.com/m2key1/HabsburgLLM"
+url: "https://huggingface.co/M2key1/HabsburgLLM"
+license: MIT
+keywords:
+  - language model
+  - historical text
+  - pretraining from scratch
+  - OLMo
+  - ANNO
